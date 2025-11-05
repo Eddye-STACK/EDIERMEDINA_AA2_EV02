@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de ejemplo</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Contenedor del formulario */
+        form {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: left;
+        }
+
+        /* Título */
+        h2 {
+            text-align: center;
+            color: #2d3436;
+            margin-bottom: 25px;
+        }
+
+        /* Etiquetas */
+        label {
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        /* Campos de texto */
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        /* Efecto al enfocar */
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #6c5ce7;
+            box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+            outline: none;
+        }
+
+        /* Botón */
+        input[type="submit"] {
+            background-color: #6c5ce7;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a4bd1;
+            transform: scale(1.03);
+        }
+
+        input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <form action="/NOMBREAPELLIDO_AA2_EV02/MiServlet" method="post">
+        <h2>Registro de usuario</h2>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo:</label>
+        <input type="email" name="correo" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
